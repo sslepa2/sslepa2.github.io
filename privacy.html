@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우프티켓 개인정보처리방침</title>
+<style>
+  :root { --bg:#F3F6FD; --card:#FFFFFF; --ink:#0C1A2E; --muted:#3C4A62; --accent:#3D6DD6; --line:#D6E0F2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0C1A2E; --card:#122645; --ink:#FFFFFF; --muted:#B7C4DA; --accent:#7FA9FF; --line:#1E3A63; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:26px; margin:0 0 4px; } h2 { font-size:18px; margin:28px 0 8px; }
+  .meta { color:var(--muted); font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin-top:14px; }
+  ul { padding-left:20px; margin:6px 0; } a { color:var(--accent); } table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { text-align:left; border-top:1px solid var(--line); padding:8px 6px; vertical-align:top; }
+</style>
+</head>
+<body>
+<main>
+  <h1>우프티켓 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 10월 1일 (초안 — 출시 전 확정)</p>
+
+  <section>
+    <p>우프티켓(이하 「앱」)은 티켓 예매 오픈 순간을 위한 서버 시계·일정·예매 준비 도구입니다. 앱은 <b>회원가입을 받지 않으며</b>, 이용자가 입력한 개인정보를 개발자의 서버로 보내지 않습니다. 이 방침은 앱이 어떤 정보를 어디에 두고, 누구에게 전달되는지 설명합니다.</p>
+  </section>
+
+  <h2>1. 이용자의 기기에만 저장되는 정보</h2>
+  <section>
+    <ul>
+      <li><b>퀵 복사 값</b>(예: 예매자 이름, 생년월일, 연락처, 환불 계좌 등 이용자가 직접 넣은 값): 아이폰의 <b>키체인</b>에 「이 기기에서만」 저장됩니다. 서버·백업·다른 기기로 전송되지 않습니다. 민감 항목은 Face ID(또는 기기 암호)로 잠그며, 앱은 생체정보를 받지 않습니다(인증은 iOS 가 처리).</li>
+      <li>일정·관심·알림 설정, 체크리스트, 좌석 우선순위 메모, 예매 일지, 이용권 횟수, 화면 설정.</li>
+      <li>복사한 값은 이 기기의 클립보드에만 들어가며 30초 뒤 지워집니다.</li>
+    </ul>
+    <p>앱을 삭제하면 기기 저장 정보는 대부분 지워집니다(이용권 횟수 등 키체인 일부는 iOS 정책에 따라 남을 수 있음).</p>
+  </section>
+
+  <h2>2. 외부로 전달되는 정보</h2>
+  <section>
+    <table>
+      <tr><th>받는 곳</th><th>전달되는 것</th><th>목적</th></tr>
+      <tr><td>Google AdMob (광고)</td><td>광고 식별자(IDFA — 이용자가 「추적 허용」을 한 경우에만), IP 주소, 기기·앱 정보, 광고 상호작용</td><td>광고 표시·측정. 추적을 허용하지 않아도 맞춤이 아닌 광고가 표시됩니다. <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></td></tr>
+      <tr><td>예매처 웹서버(이용자가 고른 곳)</td><td>일반적인 인터넷 요청 정보(IP 주소 등)</td><td>서버 시각 확인(시간 헤더 조회)</td></tr>
+      <tr><td>일정 데이터 서버(Supabase)</td><td>일반적인 인터넷 요청 정보(IP 주소 등)</td><td>예매 오픈 일정 조회(읽기 전용)</td></tr>
+      <tr><td>네이버 스포츠</td><td>일반적인 인터넷 요청 정보(IP 주소 등)</td><td>야구 순위 조회</td></tr>
+    </table>
+    <p>개발자는 위 요청에서 이용자를 식별하는 정보를 따로 수집·보관하지 않습니다.</p>
+  </section>
+
+  <h2>3. 알림·캘린더·공유</h2>
+  <section>
+    <ul>
+      <li>알림은 기기 안에서 예약되는 로컬 알림입니다.</li>
+      <li>캘린더 넣기는 iOS 의 새 이벤트 화면을 띄우며, 저장 여부는 이용자가 정합니다.</li>
+      <li>공유는 iOS 공유 시트를 통해 이용자가 고른 앱으로 보내집니다.</li>
+    </ul>
+  </section>
+
+  <h2>4. 보유 기간과 파기</h2>
+  <section>
+    <p>기기 저장 정보는 이용자가 지우거나 앱을 삭제할 때까지 기기에 남습니다. 설정 › 개인정보에서 퀵 복사를 잠그거나 기록을 지울 수 있고, 퀵 복사 항목은 「퀵 복사 관리」에서 삭제할 수 있습니다.</p>
+  </section>
+
+  <h2>5. 아동</h2>
+  <section><p>앱은 만 14세 미만 아동의 개인정보를 따로 수집하지 않습니다.</p></section>
+
+  <h2>6. 이용자의 권리와 문의</h2>
+  <section>
+    <p>개인정보 관련 문의·요청은 아래로 연락해 주세요.</p>
+    <p>개인정보 보호책임자: 정호철 · 이메일: <a href="mailto:info@pharmasos.co.kr">info@pharmasos.co.kr</a></p>
+  </section>
+
+  <h2>7. 방침의 변경</h2>
+  <section><p>기능이 추가되어 처리하는 정보가 바뀌면(예: 팬 제보·랭킹 기능) 이 방침을 고치고 시행일을 새로 적습니다.</p></section>
+</main>
+</body>
+</html>
